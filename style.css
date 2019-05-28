@@ -7,7 +7,8 @@ header .intro{
 }
 #intro h1{
 	font-height:200;
-	margin:0.4em 0;
+	margin: 9.4em 0;
+    margin-left: 212px;
 }
 #intro img{
 	width:40%;
