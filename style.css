@@ -7,11 +7,12 @@ header .intro{
 }
 #intro h1{
 	font-height:200;
-	margin: 9.4em 0;
-    margin-left: 212px;
+	margin: 10.4em 0;
+    margin-left: 630px;
+	    color: aquamarine;
 }
 #intro img{
-	width:40%;
+	width:100%;
 	height: 50%;
 }
 .text{
