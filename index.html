@@ -8,7 +8,10 @@
 <title>Shashank H S</title>
 </head>
 
-<body>
+<body onLoad="loading()" >
+<div id="loader">
+	
+</div>
 <div id="intro">
 <img src=",y pic -01-01.jpeg"/>
 <div class="text">
@@ -29,6 +32,13 @@
 </header>
 
 	
+<!-- for loader-->
+<script>
+	var preloader= document.getElementById("loader");
+    function loading(){
+	preloader.style.display='none';
+}
+</script>
 	
 
 </body>
