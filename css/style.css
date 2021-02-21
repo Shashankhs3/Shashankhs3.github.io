@@ -17,7 +17,7 @@ html{
   box-sizing:border-box;
   font-family:'Fira Mono', monospace;
   font-size:20px;
-  height:1000vh;
+  height:100%;
   overflow:hidden;
   padding:21vmin;
   width:100%;
@@ -328,7 +328,7 @@ ul li a:hover {
   }
   100% {
     box-shadow:0 -10vh 20vh #0c0;
-    top:200vh;
+    top:100%;
   }
 }
 
