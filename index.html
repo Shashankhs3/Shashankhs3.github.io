@@ -17,8 +17,11 @@
 <div id="loader">
 <div class="LoaderBox">
 	<p>&nbsp;   Shashank's <br> Website is getting loaded.. </p>
+  <h>Until then Download App</h1>
 </div>
-	</div>
+
+  </div>
+  <div id="site">
 <header>
 <nav >
      
@@ -258,15 +261,31 @@
 		</div>
 	</div>
 </div>
-
+</div>
 </body>
 	
 <!-- for loader-->
 <script>
-	var preloader= document.getElementById("loader");
+  var preloader= document.getElementById("loader");
+  var site=document.getElementById("site");
     function loading(){
-	preloader.style.display='none';
+  preloader.style.display='block';
+site.style.position="absulute"
+site.style.top="-9999px"
+
+
+
 }
+//   (function($){
+//   'use strict';
+//     $(window).on('load', function () {
+//         if ($(".loader").length > 0)
+//         {
+//             $(".loader").fadeOut("slow");
+//         }
+//     });
+// })(jQuery)
+
 </script>
 <!-- Java script for swiper-->	
 <script src="js/swiper.min.js"></script>

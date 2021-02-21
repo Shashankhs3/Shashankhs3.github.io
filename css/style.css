@@ -8,7 +8,9 @@ html{
 	
 	
 }
-#loader
+#loader{
+  height: 100%;
+}
 .LoaderBox{
 	text-align: center;
   animation:colorPulse 5s infinite ease-in-out;
@@ -35,7 +37,7 @@ margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   background-color: #000;
 }
 .LoaderBox::after {
@@ -74,7 +76,11 @@ margin: 0;
     background-position: 500%;
   }
 }
-
+#site{
+  
+  position:absolute;
+  top: -9999px;
+}
 header{
 	height: 60px;
 	background-color: black;
@@ -320,15 +326,15 @@ ul li a:hover {
     box-shadow:0 -10vh 20vh #0c0;
     top:-100vh;
   }
-  48%, 52% {
-    box-shadow:0 -10vh 20vh #090;
+  48% {
+    box-shadow:0 -10vh 20vh #0c0;
   }
   50% {
-    box-shadow:0 -10vh 20vh #060;
+    box-shadow:0 -10vh 20vh #0c0;
   }
   100% {
     box-shadow:0 -10vh 20vh #0c0;
-    top:100%;
+    top:0;
   }
 }
 
