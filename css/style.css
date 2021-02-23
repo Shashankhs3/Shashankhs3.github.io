@@ -8,8 +8,96 @@ html{
 	
 	
 }
+/* to download app */
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 10px 25px;
+  
+	background-color: #4CC713;
+	color: white;
+  
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 15px;
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 10px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 3px;
+	margin-top: -7px;
+  
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #4CC713;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}
+
+
 #loader{
   height: 100%;
+  background-color: black;
+  text-align: center;
 }
 .LoaderBox{
 	text-align: center;
@@ -24,8 +112,8 @@ html{
   padding:21vmin;
   width:100%;
 }
-.LoaderBox:before {
-  animation:wave 10s infinite ease-in-out;
+/* .LoaderBox:before {
+   animation:wave 10s infinite ease-in-out; 
 	content: "";
   left:0;
   opacity:.5;
@@ -39,10 +127,10 @@ margin: 0;
   align-items: center;
   height: 100%;
   background-color: #000;
-}
-.LoaderBox::after {
-  background-image:linear-gradient(transparent, transparent 3px, #222);
-  background-size:4px 4px;
+} */
+/* .LoaderBox::after {
+   background-image:linear-gradient(transparent, transparent 3px, #222);
+  background-size:4px 4px; 
   bottom:0;
   content:"";
   left:0;
@@ -51,7 +139,7 @@ margin: 0;
   right:0;
   top:0;
   z-index:2;
-}
+} */
 
 #loader p {
   position: relative;
@@ -320,7 +408,7 @@ ul li a:hover {
     color:#060;
   }
 }
-
+/* 
 @keyframes wave {
   0% {
     box-shadow:0 -10vh 20vh #0c0;
@@ -336,7 +424,7 @@ ul li a:hover {
     box-shadow:0 -10vh 20vh #0c0;
     top:0;
   }
-}
+} */
 
 @keyframes blink {
   50% {
